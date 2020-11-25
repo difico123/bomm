@@ -19,64 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef6c9a8a-757c-4581-88e1-f881978c8de0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/SaveName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/menu/MenuFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bomber.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/Bomberman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/Bomberman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/AnimatedEntitiy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/AnimatedEntitiy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/LayeredEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/LayeredEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/bomb/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/bomb/Bomb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/bomb/DirectionalExplosion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/bomb/DirectionalExplosion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/bomb/Explosion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/bomb/Explosion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/Mob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/Mob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/Balloom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/Balloom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/Doll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/Kondoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/Kondoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/Minvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/Minvo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/Oneal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/Oneal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/ai/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/ai/AI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/ai/AILow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/ai/AILow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/mob/enemy/ai/AIMedium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/mob/enemy/ai/AIMedium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/GrassTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/GrassTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/PortalTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/PortalTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/WallTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/WallTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/destroyable/BrickTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/destroyable/BrickTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/destroyable/DestroyableTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/destroyable/DestroyableTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/powerup/Powerup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/powerup/Powerup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/powerup/PowerupBombs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/powerup/PowerupBombs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/powerup/PowerupFlames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/powerup/PowerupFlames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/entities/tile/powerup/PowerupSpeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/entities/tile/powerup/PowerupSpeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/exceptions/BombermanException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/exceptions/LoadLevelException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/graphics/IRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/graphics/IRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/graphics/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/graphics/Screen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/graphics/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/graphics/Sprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/graphics/SpriteSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/graphics/SpriteSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/CodeDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/InfoDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/InfoDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/InfoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/InfoPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/menu/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/menu/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/menu/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/menu/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/gui/menu/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/gui/menu/Options.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/input/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/input/Keyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/level/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/level/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/level/FileLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/level/FileLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/level/ILevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/level/ILevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/carlosflorencio/bomberman/level/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/subarashi/bomberman/level/Level.java" afterDir="false" />
-    </list>
+    <list default="true" id="ef6c9a8a-757c-4581-88e1-f881978c8de0" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
