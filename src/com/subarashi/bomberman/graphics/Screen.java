@@ -14,7 +14,6 @@ public class Screen {
 	protected int _width, _height;
 	public int[] _pixels;
 	private int _transparentColor = 0xffff00ff; //pink with alpha channel (ff in the begining) // xóa phông màu hồng và làm trong cái nền, lấy cái object
-	public static int xOffset = 0, yOffset = 0;
 
 	public Screen(int width, int height) {
 		_width = width;
@@ -29,8 +28,6 @@ public class Screen {
 	}
 
 	public void renderEntity(int xp, int yp, Entity entity) { //save entity pixels
-		xp -= xOffset;
-		yp -= yOffset;
 		for (int y = 0; y < entity.getSprite().getSize(); y++) {
 			int ya = y + yp; //add offset
 			for (int x = 0; x < entity.getSprite().getSize(); x++) {
@@ -44,8 +41,6 @@ public class Screen {
 	}
 
 	public void renderEntityWithBelowSprite(int xp, int yp, Entity entity, Sprite below) {
-		xp -= xOffset;
-		yp -= yOffset;
 		for (int y = 0; y < entity.getSprite().getSize(); y++) {
 			int ya = y + yp;
 			for (int x = 0; x < entity.getSprite().getSize(); x++) {
@@ -84,26 +79,6 @@ public class Screen {
 //		g.setFont(font);
 //		g.setColor(Color.GRAY);
 //		drawCenteredString(code, getRealWidth(), getRealHeight() * 2  - (Game.TILES_SIZE * 2) * Game.SCALE, g);
-	}
-	public static void setOffset(int xO, int yO) {
-		xOffset = xO;
-		yOffset = yO;
-	}
-
-	public static int calculateXOffset(Board board, Player player) {
-		if(player == null) return 0;
-		int temp = xOffset;
-
-		double playerX = player.getX() / 16;
-		double complement = 0.5;
-		int firstBreakpoint = board.getWidth() / 4;
-		int lastBreakpoint = board.getWidth() - firstBreakpoint;
-
-		if( playerX > firstBreakpoint + complement && playerX < lastBreakpoint - complement) {
-			temp = (int)player.getX()  - (Game.WIDTH / 2);
-		}
-
-		return temp;
 	}
 	public void drawChangeLevel(Graphics g, int level) {
 		g.setColor(Color.black);

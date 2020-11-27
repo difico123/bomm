@@ -39,8 +39,7 @@ public class FileLevel extends Level {
 		try {
 			URL absPath = FileLevel.class.getResource("/" + path);
 			
-			BufferedReader in = new BufferedReader(
-			        new InputStreamReader(absPath.openStream()));
+			BufferedReader in = new BufferedReader( new InputStreamReader(absPath.openStream()));
 
 			String data = in.readLine();
 			StringTokenizer tokens = new StringTokenizer(data);
@@ -125,7 +124,6 @@ public class FileLevel extends Level {
 				break;
 			case 'p': 
 				_board.addMob( new Player(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILES_SIZE, _board) );
-				Screen.setOffset(0, 0);
 				_board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
 				break;
 			//Enemies

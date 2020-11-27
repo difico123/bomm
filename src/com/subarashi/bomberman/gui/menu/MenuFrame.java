@@ -7,19 +7,19 @@ package com.subarashi.bomberman.gui.menu;
  */
 
 import com.subarashi.bomberman.gui.Frame;
-
 /**
  *
  * @author ducno
  */
 public class MenuFrame extends javax.swing.JFrame {
-
+    Frame frame;
     /**
      * Creates new form MenuFrame
      */
-    public MenuFrame() {
+    public MenuFrame() throws Exception {
         initComponents();
         setLocationRelativeTo(null);
+        setVisible(true);
     }
 
     /**
@@ -116,7 +116,7 @@ public class MenuFrame extends javax.swing.JFrame {
 
     private void newGameButtonActionPerformed(java.awt.event.ActionEvent evt) throws Exception {
         this.dispose();
-       new Frame();
+        frame = new Frame();
     }
 
     // Variables declaration - do not modify

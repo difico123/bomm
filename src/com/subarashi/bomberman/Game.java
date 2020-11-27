@@ -22,7 +22,7 @@ public class Game extends Canvas {
 	 */
 	
 	public static final int TILES_SIZE = 16,
-							WIDTH = TILES_SIZE * 30, //minus one to ajust the window,
+							WIDTH = TILES_SIZE * 31, //minus one to ajust the window,
 							HEIGHT = 13 * TILES_SIZE;
 
 	public static int SCALE = 3;

@@ -14,7 +14,7 @@ public class Bomb extends AnimatedEntitiy {
 
 	//options
 	protected double _timeToExplode = 120; //2 seconds
-	public int _timeAfter = 20; //time to explosions disapear
+	public int _timeAfter = 10; //time to explosions disapear
 	
 	protected Board _board;
 	protected boolean _allowedToPassThru = true;

@@ -58,7 +58,6 @@ public class Player extends Mob {
 	
 	@Override
 	public void render(Screen screen) {
-		calculateXOffset();
 		if(_alive)
 			chooseSprite();
 		else
@@ -67,10 +66,6 @@ public class Player extends Mob {
 		screen.renderEntity((int)_x, (int)_y - _sprite.SIZE, this);
 	}
 
-	public void calculateXOffset() {
-		int xScroll = Screen.calculateXOffset(_board, this);
-		Screen.setOffset(xScroll, 0);
-	}
 	/*
 	|--------------------------------------------------------------------------
 	| Mob Unique

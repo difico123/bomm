@@ -1,6 +1,7 @@
 package com.subarashi.bomberman;
 
 import java.awt.Graphics;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -15,10 +16,13 @@ import com.subarashi.bomberman.entities.tile.powerup.Powerup;
 //import com.subarashi.bomberman.exceptions.LoadLevelException;
 import com.subarashi.bomberman.graphics.IRender;
 import com.subarashi.bomberman.graphics.Screen;
+import com.subarashi.bomberman.gui.InfoPanel;
 import com.subarashi.bomberman.gui.SaveName;
 import com.subarashi.bomberman.input.Keyboard;
 import com.subarashi.bomberman.level.FileLevel;
 import com.subarashi.bomberman.level.Level;
+
+import javax.swing.*;
 
 public class Board implements IRender {
 
@@ -74,15 +78,14 @@ public class Board implements IRender {
 	public void render(Screen screen) {
 		if( _game.isPaused() ) return;
 
-		//only render the visible part of screen
 		int x0 = 0; //tile precision, -> left X
-		int x1 = ( screen.getWidth() + Game.TILES_SIZE) / Game.TILES_SIZE; // -> right X
+		int x1 = ( screen.getWidth() ) / Game.TILES_SIZE; // -> right X
 		int y0 = 0;
 		int y1 = (screen.getHeight()) / Game.TILES_SIZE; //render one tile plus to fix black margins
 
 		for (int y = y0; y < y1; y++) {
 			for (int x = x0; x < x1; x++) {
-				_entities[x + y * _level.getWidth()].render(screen);
+				_entities[x + y * _level.getWidth()].render(screen); // hien thi tat ca cac entities len man hinh
 			}
 		}
 		
@@ -121,17 +124,21 @@ public class Board implements IRender {
 	}
 	
 	public void changeLevel(int level) throws Exception {
+		if(level > 5) {
+			endGame();
+			return;
+		}
 		_time = Game.TIME;
 		_screenToShow = 2;
 		_game.resetScreenDelay();
 		_game.pause();
 		_mobs.clear();
 		_bombs.clear();
-		
+
 		try {
 			_level = new FileLevel("levels/Level" + level + ".txt", this);
+
 			_entities = new Entity[_level.getHeight() * _level.getWidth()];
-			
 			_level.createEntities();
 		} catch (IOException e) {
 			endGame();
@@ -163,8 +170,19 @@ public class Board implements IRender {
 		_screenToShow = 1;
 		_game.resetScreenDelay();
 		_game.pause();
-		if(com.subarashi.bomberman.gui.menu.Game.getTopScore() < _points) {
-			new SaveName(_points);
+
+		if(InfoPanel.getHighScore() != _points) {
+			ImageIcon icon = new ImageIcon("res/textures/user.png");
+			String n = (String)JOptionPane.showInputDialog(null, "YOUR POINTS: " + _points,
+					"GAME OVER", JOptionPane.INFORMATION_MESSAGE, icon,null,null);
+			try {
+				FileWriter myWriter = new FileWriter("res/textures/highscore.txt",false);
+				myWriter.write(n + "@" + _points);
+				myWriter.close();
+			} catch (IOException e) {
+				System.out.println("An error occurred.");
+				e.printStackTrace();
+			}
 		}
 	}
 	

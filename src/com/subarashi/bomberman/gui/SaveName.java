@@ -81,7 +81,7 @@ public class SaveName extends javax.swing.JFrame {
         s = jTextField1.getText();
         try {
             FileWriter myWriter = new FileWriter("res/textures/highscore.txt",false);
-            myWriter.write(s + " " + getPoint());
+            myWriter.write(s + "@" + getPoint());
             myWriter.close();
         } catch (IOException e) {
             System.out.println("An error occurred.");

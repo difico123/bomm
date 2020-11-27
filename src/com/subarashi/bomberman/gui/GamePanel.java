@@ -7,7 +7,6 @@ import java.io.IOException;
 import javax.swing.JPanel;
 
 import com.subarashi.bomberman.Game;
-//import com.subarashi.bomberman.exceptions.BombermanException;
 
 public class GamePanel extends JPanel {
 
@@ -18,10 +17,8 @@ public class GamePanel extends JPanel {
 		setPreferredSize(new Dimension(Game.WIDTH * Game.SCALE, Game.HEIGHT * Game.SCALE));
 		
 		try {
-				_game = new Game(frame);
-			
+			_game = new Game(frame);
 			add(_game);
-			
 			_game.setVisible(true);
 			
 		} catch (Exception e) {
